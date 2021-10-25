@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FuelCalc</string>
+    <string name="fuel_text">Üzemanyag ár (Ft)</string>
+    <string name="calc_button">Számol</string>
+    <string name="road_text">Tervezett út (km)</string>
+    <string name="avarage_text">Átlagfogyasztás (km/l)</string>
+    <string name="forint"> Ft</string>
+    <string name="reset_button">Visszaállít</string>
+</resources>

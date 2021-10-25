@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kicsikoko.fuelcalc.MainActivity">
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorAccent"
+        />-->
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/fuel_text"
+                android:layout_marginTop="5dp"
+                android:id="@+id/fuel_etxt"
+                android:drawableEnd="@drawable/gas_station"
+                android:background="@drawable/edittext"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:maxLength="3"
+                android:ems="10"
+                android:inputType="number"
+                android:autofillHints="" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/road_text"
+                android:background="@drawable/edittext"
+                android:drawableEnd="@drawable/ic_map"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimaryDark"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:id="@+id/road_etxt"
+                android:inputType="number"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/avarage_etxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/avarage_text"
+                android:background="@drawable/edittext"
+                android:drawableEnd="@drawable/ic_baseline_directions_car_24"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimary"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:ems="10"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:autofillHints="" />
+
+            <RelativeLayout
+                android:id="@+id/button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="100dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_calc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/calc_button"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:textColor="@color/colorAccent"
+                    android:background="@drawable/button_style"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/result_tv"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignEnd="@+id/reset_button"
+                    android:layout_alignBaseline="@+id/reset_button"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="48sp"
+                    android:textStyle="normal|bold|italic" />
+
+                <Button
+                    android:id="@+id/reset_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/button_calc"
+                    android:background="@drawable/button_style"
+                    android:text="@string/reset_button"
+                    android:textColor="@color/colorAccent" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/image_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/blackpump"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>
